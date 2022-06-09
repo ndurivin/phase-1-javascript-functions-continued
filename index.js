@@ -9,10 +9,12 @@ let mondayWork = function(activity = "go to the office"){
 }
 
 
-let wrapAdjective = function (newAdjective = "*"){
-    return function inner (feel = "special"){
-        return `You are ${newAdjective}${feel}${newAdjective}!`;
+let wrapAdjective = function(newPara = "*"){
+    return function innerFunction(para = "special"){
+        return `You are ${newPara}${para}${newPara}!`
     }
 }
-wrapAdjective('!!!');
+wrapAdjective("*a hard worker*")
+// wrapAdjective("!!!");
+
 
